@@ -1,0 +1,68 @@
+.Pseudo-Elements{
+    color: peru;
+}
+.Pseudo-Elements:hover{ /* (:hover) এটা ব্যাবহার করা হয় কোন এলিমেন্ট এর উপর মাউস নিয়ে গেলে কোন পরিবর্তন এর জন্য। */
+    color: chocolate;
+}
+.Pseudo-Input:focus{ /* (:focus) এটা ব্যাবহার করা হয় কোন এলিমেন্ট এর উপর ক্লিক করার পর কোন পরিবর্তন এর জন্য। (outline: 0;) এটি ব্যাবহার করা হয় কোন ইনপুট এর ভেতরের সিএসএস না রাখার জন্য। */
+    outline: 0; 
+    border-color: blue;
+}
+.Pseudo-Ancor:visited{ /* (:visited) এটা ব্যাবহার করা হয় কোন এলিমেন্ট ভিজিট করার পর যেসব পরিবর্তন ঘটবে তার জন্য। */
+    color: red;
+}
+.Pseudo-Ul > li:last-child{ /* (:last-child) কোন এলিমেন্ট এর শেষ শেষ চাইল্ড এলিমেন্ট কে ধরে স্টাইল করার জন্য।(:first-child) কোন এলিমেন্ট এর প্রথম চাইল্ড এলিমেট কে ধরে স্টাইল দেওয়ার জন্য। */
+    color: red;
+}
+.Pseudo-Ul > li:nth-child(2){ /* (:nth-child(2)) কোন প্যারেন্ট এলিমেন্ট এর নিদিষ্ট কোন এলিমেন্ট কে ধরে স্টাইল দেওয়ার জন্য। */
+    color: green;
+}
+
+.Box img{
+    width: 300px;
+}
+.boy{
+    position: sticky; /* (position: sticky;) এটি ব্যাবহার করে হয় কোন এলিমেন্ট কে তার সিমানার মধ্যে নিদিষ্ট কোন যায়গার আটকিয়ে রাখার জন্য। (position:Fixed; এটি ব্যাবহার করা হয় কোন এলিমেন্ট কে তার নিজের জায়গার আটকিয়ে রাখার জন্য।এবং তার নিজের জায়গা ছেড়ে দিবে। */
+    top: 30px;
+    left: 50px;
+}
+.ring{
+    position: relative; /* (position: relative;) কোন এলিমেন্ট কে তার জায়গায় রেখে আশে পাশে সরানোর জন্য।(নিজের যায়গা অবশ্যই ধরে রাখবে) */
+    left: 50px;
+    top: -20px;
+}
+.water{
+    position: absolute; /* (position: absolute;) নিজের জয়গা ছেড়ে দিয়ে ভেসে উঠবে এবং পেরেন্ট কে কেন্দ্র করে আশে পাশে সরবে। */
+    top: 50px;
+    left: 300px;
+}
+.Dummy{
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+}
+.Index-Content{
+    width: 200px;
+    height: 150px;
+    background-color: aquamarine;
+    position: relative;
+}
+.two{
+    background-color: blue;
+    top: -30px;
+    left: 50px;
+    z-index: 5; /* (z-index: 5;) এটি ব্যাবহার করা হয় কোন এলিমেন্ট কে উপরে বা নিচে নিয়ে আসতে। */
+}
+.three{
+    background-color: brown;
+    top: -60px;
+    left: 100px;
+    z-index: 4;
+}
+.Pseudo-Element::after{ /* (::after) কোন এলিমেন্ট এর পরে কোন এলিমেন্ট কে বসানোর জন্য। (::before) কোন এলিমেন্ট এর আগে কোন এলিমেন্ট কে বসানোর জন্য। */
+    content: ':after';
+    color: red;
+}
+.Pseudo-Element-Two::first-letter{ /* (::first-letter) কোন এলিমেন্ট এর প্রথম লেটার এর স্টাইল দেওয়ার জন্য।(::first-line) কোন এলিমেন্ট এর প্রথম লাইন কে স্টাইল দেওয়ার জন্য। (::secection) কোন এলিমেন্ট এর যতটুকু সিলেক্ট করা হবে তার স্টাইল দেওয়ার জন্য। */
+    font-size: 40px;
+}
